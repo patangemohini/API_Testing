@@ -1,0 +1,1592 @@
+{
+	"info": {
+		"_postman_id": "4cc7ee1d-bb17-4bb3-91f8-bd7b2975134b",
+		"name": "Spotify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22731822"
+	},
+	"item": [
+		{
+			"name": "UserProfile",
+			"item": [
+				{
+					"name": "Get User current profile",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBNkCKY9WPd7nr3G0JO7R5go7dj8q0c0juJhFBnMX8NTCYbV7O7BKpHZVzlxyQyqSZt-Z-44BZ9SBVH4_YHQTrwwxf5eyN7obedNiUstqjAaY8zg-qFj4i4JUcInoL9yYifjRH0V2cxSoqp8f4JAnIVNLqbQp44BOA6igtyyfwwRXPYLHZR221_YIow-o2dPKSu-D7x_gklP0xced1M5ybLUjDinbWEJYYW3Lzw8FRIYtJp4KnVxlgNrZzx9P8a-GCPwX49b-G6owRnXbw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/me",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBNkCKY9WPd7nr3G0JO7R5go7dj8q0c0juJhFBnMX8NTCYbV7O7BKpHZVzlxyQyqSZt-Z-44BZ9SBVH4_YHQTrwwxf5eyN7obedNiUstqjAaY8zg-qFj4i4JUcInoL9yYifjRH0V2cxSoqp8f4JAnIVNLqbQp44BOA6igtyyfwwRXPYLHZR221_YIow-o2dPKSu-D7x_gklP0xced1M5ybLUjDinbWEJYYW3Lzw8FRIYtJp4KnVxlgNrZzx9P8a-GCPwX49b-G6owRnXbw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/users/31rleeotc5km4vgu5bfcpxmo27te",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"users",
+								"31rleeotc5km4vgu5bfcpxmo27te"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Shows",
+			"item": [
+				{
+					"name": "Get a Shows",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBNkCKY9WPd7nr3G0JO7R5go7dj8q0c0juJhFBnMX8NTCYbV7O7BKpHZVzlxyQyqSZt-Z-44BZ9SBVH4_YHQTrwwxf5eyN7obedNiUstqjAaY8zg-qFj4i4JUcInoL9yYifjRH0V2cxSoqp8f4JAnIVNLqbQp44BOA6igtyyfwwRXPYLHZR221_YIow-o2dPKSu-D7x_gklP0xced1M5ybLUjDinbWEJYYW3Lzw8FRIYtJp4KnVxlgNrZzx9P8a-GCPwX49b-G6owRnXbw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/shows?market=ES&ids=5CfCWKI5pZ28U0uOzXkDHe%2C5as3aKmN2k11yfDDDSrvaZ",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"shows"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "ES"
+								},
+								{
+									"key": "ids",
+									"value": "5CfCWKI5pZ28U0uOzXkDHe%2C5as3aKmN2k11yfDDDSrvaZ"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Shows Episode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBNkCKY9WPd7nr3G0JO7R5go7dj8q0c0juJhFBnMX8NTCYbV7O7BKpHZVzlxyQyqSZt-Z-44BZ9SBVH4_YHQTrwwxf5eyN7obedNiUstqjAaY8zg-qFj4i4JUcInoL9yYifjRH0V2cxSoqp8f4JAnIVNLqbQp44BOA6igtyyfwwRXPYLHZR221_YIow-o2dPKSu-D7x_gklP0xced1M5ybLUjDinbWEJYYW3Lzw8FRIYtJp4KnVxlgNrZzx9P8a-GCPwX49b-G6owRnXbw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/shows/38bS44xjbVVZ3No3ByF1dJ/episodes?market=ES&limit=10&offset=5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"shows",
+								"38bS44xjbVVZ3No3ByF1dJ",
+								"episodes"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "ES"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Show",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBNkCKY9WPd7nr3G0JO7R5go7dj8q0c0juJhFBnMX8NTCYbV7O7BKpHZVzlxyQyqSZt-Z-44BZ9SBVH4_YHQTrwwxf5eyN7obedNiUstqjAaY8zg-qFj4i4JUcInoL9yYifjRH0V2cxSoqp8f4JAnIVNLqbQp44BOA6igtyyfwwRXPYLHZR221_YIow-o2dPKSu-D7x_gklP0xced1M5ybLUjDinbWEJYYW3Lzw8FRIYtJp4KnVxlgNrZzx9P8a-GCPwX49b-G6owRnXbw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/shows/38bS44xjbVVZ3No3ByF1dJ?market=ES",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"shows",
+								"38bS44xjbVVZ3No3ByF1dJ"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "ES"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tracks",
+			"item": [
+				{
+					"name": "Get Track's Audio Analysis",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBNkCKY9WPd7nr3G0JO7R5go7dj8q0c0juJhFBnMX8NTCYbV7O7BKpHZVzlxyQyqSZt-Z-44BZ9SBVH4_YHQTrwwxf5eyN7obedNiUstqjAaY8zg-qFj4i4JUcInoL9yYifjRH0V2cxSoqp8f4JAnIVNLqbQp44BOA6igtyyfwwRXPYLHZR221_YIow-o2dPKSu-D7x_gklP0xced1M5ybLUjDinbWEJYYW3Lzw8FRIYtJp4KnVxlgNrZzx9P8a-GCPwX49b-G6owRnXbw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/audio-analysis/11dFghVXANMlKmJXsNCbNl",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"audio-analysis",
+								"11dFghVXANMlKmJXsNCbNl"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tracks' Audio Features",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBNkCKY9WPd7nr3G0JO7R5go7dj8q0c0juJhFBnMX8NTCYbV7O7BKpHZVzlxyQyqSZt-Z-44BZ9SBVH4_YHQTrwwxf5eyN7obedNiUstqjAaY8zg-qFj4i4JUcInoL9yYifjRH0V2cxSoqp8f4JAnIVNLqbQp44BOA6igtyyfwwRXPYLHZR221_YIow-o2dPKSu-D7x_gklP0xced1M5ybLUjDinbWEJYYW3Lzw8FRIYtJp4KnVxlgNrZzx9P8a-GCPwX49b-G6owRnXbw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/audio-features?ids=7ouMYWpwJ422jRcDASZB7P%2C4VqPOruhp5EdPBeR92t6lQ%2C2takcwOaAZWiXQijPHIx7B",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"audio-features"
+							],
+							"query": [
+								{
+									"key": "ids",
+									"value": "7ouMYWpwJ422jRcDASZB7P%2C4VqPOruhp5EdPBeR92t6lQ%2C2takcwOaAZWiXQijPHIx7B"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Track’s Audio Features",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBNkCKY9WPd7nr3G0JO7R5go7dj8q0c0juJhFBnMX8NTCYbV7O7BKpHZVzlxyQyqSZt-Z-44BZ9SBVH4_YHQTrwwxf5eyN7obedNiUstqjAaY8zg-qFj4i4JUcInoL9yYifjRH0V2cxSoqp8f4JAnIVNLqbQp44BOA6igtyyfwwRXPYLHZR221_YIow-o2dPKSu-D7x_gklP0xced1M5ybLUjDinbWEJYYW3Lzw8FRIYtJp4KnVxlgNrZzx9P8a-GCPwX49b-G6owRnXbw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/audio-features/11dFghVXANMlKmJXsNCbNl",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"audio-features",
+								"11dFghVXANMlKmJXsNCbNl"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Several Tracks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBNkCKY9WPd7nr3G0JO7R5go7dj8q0c0juJhFBnMX8NTCYbV7O7BKpHZVzlxyQyqSZt-Z-44BZ9SBVH4_YHQTrwwxf5eyN7obedNiUstqjAaY8zg-qFj4i4JUcInoL9yYifjRH0V2cxSoqp8f4JAnIVNLqbQp44BOA6igtyyfwwRXPYLHZR221_YIow-o2dPKSu-D7x_gklP0xced1M5ybLUjDinbWEJYYW3Lzw8FRIYtJp4KnVxlgNrZzx9P8a-GCPwX49b-G6owRnXbw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/tracks?market=ES&ids=7ouMYWpwJ422jRcDASZB7P%2C4VqPOruhp5EdPBeR92t6lQ%2C2takcwOaAZWiXQijPHIx7B",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tracks"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "ES"
+								},
+								{
+									"key": "ids",
+									"value": "7ouMYWpwJ422jRcDASZB7P%2C4VqPOruhp5EdPBeR92t6lQ%2C2takcwOaAZWiXQijPHIx7B"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tracks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBNkCKY9WPd7nr3G0JO7R5go7dj8q0c0juJhFBnMX8NTCYbV7O7BKpHZVzlxyQyqSZt-Z-44BZ9SBVH4_YHQTrwwxf5eyN7obedNiUstqjAaY8zg-qFj4i4JUcInoL9yYifjRH0V2cxSoqp8f4JAnIVNLqbQp44BOA6igtyyfwwRXPYLHZR221_YIow-o2dPKSu-D7x_gklP0xced1M5ybLUjDinbWEJYYW3Lzw8FRIYtJp4KnVxlgNrZzx9P8a-GCPwX49b-G6owRnXbw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/tracks/11dFghVXANMlKmJXsNCbNl?market=ES",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"tracks",
+								"11dFghVXANMlKmJXsNCbNl"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "ES"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "Search for item",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBNkCKY9WPd7nr3G0JO7R5go7dj8q0c0juJhFBnMX8NTCYbV7O7BKpHZVzlxyQyqSZt-Z-44BZ9SBVH4_YHQTrwwxf5eyN7obedNiUstqjAaY8zg-qFj4i4JUcInoL9yYifjRH0V2cxSoqp8f4JAnIVNLqbQp44BOA6igtyyfwwRXPYLHZR221_YIow-o2dPKSu-D7x_gklP0xced1M5ybLUjDinbWEJYYW3Lzw8FRIYtJp4KnVxlgNrZzx9P8a-GCPwX49b-G6owRnXbw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/search?q=remaster%2520track%3ADoxy%2Bartist%3AMiles%2520Davis&type=track%2Cartist&market=ES&limit=10&offset=5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "remaster%2520track%3ADoxy%2Bartist%3AMiles%2520Davis"
+								},
+								{
+									"key": "type",
+									"value": "track%2Cartist"
+								},
+								{
+									"key": "market",
+									"value": "ES"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PlayList",
+			"item": [
+				{
+					"name": "Get Current user's playlist",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBeCNzKTTTPYpKJ5JmUChFxuognG4P0Zb6PuYztF8VlMjVA8iN64JKfKmIA31uhtlrKMJ8WRYDkYUvVRX8VTTiFlUlIq_0os746LpQmaUV1_z3x0M-rZxAo_MtlwQCO54nF2aTQTLEKLnLf8U26mcHNLB8PxrXgq7tjPknV0UgdiCC16Og8vHRTAUBEqQaBMySyTsKsDQvikfASmWb5IP15BboiSq7-ozn16DR9820QdBIbCQRlJKiXDVb7UqR7SUwwvqhrw4g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/me/playlists?limit=5&offset=4",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"me",
+								"playlists"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "offset",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Playlist item",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBeCNzKTTTPYpKJ5JmUChFxuognG4P0Zb6PuYztF8VlMjVA8iN64JKfKmIA31uhtlrKMJ8WRYDkYUvVRX8VTTiFlUlIq_0os746LpQmaUV1_z3x0M-rZxAo_MtlwQCO54nF2aTQTLEKLnLf8U26mcHNLB8PxrXgq7tjPknV0UgdiCC16Og8vHRTAUBEqQaBMySyTsKsDQvikfASmWb5IP15BboiSq7-ozn16DR9820QdBIbCQRlJKiXDVb7UqR7SUwwvqhrw4g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/playlists/3cEYpjA9oz9GiPac4AsH4n/tracks?market=ES&fields=items(added_by.id%2Ctrack(name%2Chref%2Calbum(name%2Chref)))&limit=14&offset=8",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"playlists",
+								"3cEYpjA9oz9GiPac4AsH4n",
+								"tracks"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "ES"
+								},
+								{
+									"key": "fields",
+									"value": "items(added_by.id%2Ctrack(name%2Chref%2Calbum(name%2Chref)))"
+								},
+								{
+									"key": "limit",
+									"value": "14"
+								},
+								{
+									"key": "offset",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Playlist Cover Image",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBeCNzKTTTPYpKJ5JmUChFxuognG4P0Zb6PuYztF8VlMjVA8iN64JKfKmIA31uhtlrKMJ8WRYDkYUvVRX8VTTiFlUlIq_0os746LpQmaUV1_z3x0M-rZxAo_MtlwQCO54nF2aTQTLEKLnLf8U26mcHNLB8PxrXgq7tjPknV0UgdiCC16Og8vHRTAUBEqQaBMySyTsKsDQvikfASmWb5IP15BboiSq7-ozn16DR9820QdBIbCQRlJKiXDVb7UqR7SUwwvqhrw4g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/playlists/3cEYpjA9oz9GiPac4AsH4n/images",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"playlists",
+								"3cEYpjA9oz9GiPac4AsH4n",
+								"images"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get playlist",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBeCNzKTTTPYpKJ5JmUChFxuognG4P0Zb6PuYztF8VlMjVA8iN64JKfKmIA31uhtlrKMJ8WRYDkYUvVRX8VTTiFlUlIq_0os746LpQmaUV1_z3x0M-rZxAo_MtlwQCO54nF2aTQTLEKLnLf8U26mcHNLB8PxrXgq7tjPknV0UgdiCC16Og8vHRTAUBEqQaBMySyTsKsDQvikfASmWb5IP15BboiSq7-ozn16DR9820QdBIbCQRlJKiXDVb7UqR7SUwwvqhrw4g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/playlists/3cEYpjA9oz9GiPac4AsH4n?market=ES&fields=items(added_by.id%2Ctrack(name%2Chref%2Calbum(name%2Chref)))",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"playlists",
+								"3cEYpjA9oz9GiPac4AsH4n"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "ES"
+								},
+								{
+									"key": "fields",
+									"value": "items(added_by.id%2Ctrack(name%2Chref%2Calbum(name%2Chref)))"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create playlist",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": " Bearer BQB4jt5qfOHKOSu2nQ0J-rHrpIJe0dI1AB3BQ4Xmjq6UuSAkmQqAHbUhXnuNj871czcgnJkFlsJpGLDwxj3dTkY1ayeydPeHyYBfmmWLPcbAFdebVrdOiENEfgJapIMzeNwr8-vpMqR5Uq5yNgAARmPlA042ccjutgHrNyR-59o2NnchsEtgA6SUxGFtdUxwjKUdzsWhjnhMupbNNvpsNsSys7XZp0YozbbrJSaYZQPGLY0URTOZCj9RY8acDXS3oXhXy_0WjvM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Hindi\",\r\n  \"description\": \"New playlist description\",\r\n  \"public\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.spotify.com/v1/users/31rleeotc5km4vgu5bfcpxmo27te/playlists",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"users",
+								"31rleeotc5km4vgu5bfcpxmo27te",
+								"playlists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add playlist item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQB4jt5qfOHKOSu2nQ0J-rHrpIJe0dI1AB3BQ4Xmjq6UuSAkmQqAHbUhXnuNj871czcgnJkFlsJpGLDwxj3dTkY1ayeydPeHyYBfmmWLPcbAFdebVrdOiENEfgJapIMzeNwr8-vpMqR5Uq5yNgAARmPlA042ccjutgHrNyR-59o2NnchsEtgA6SUxGFtdUxwjKUdzsWhjnhMupbNNvpsNsSys7XZp0YozbbrJSaYZQPGLY0URTOZCj9RY8acDXS3oXhXy_0WjvM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.spotify.com/v1/playlists/65ch7yGkgI338yKsXEJf21/tracks?uris=spotify%3Atrack%3A4iV5W9uYEdYUVa79Axb7Rh%2Cspotify%3Atrack%3A1301WleyT98MSxVHPZCA6M",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"playlists",
+								"65ch7yGkgI338yKsXEJf21",
+								"tracks"
+							],
+							"query": [
+								{
+									"key": "uris",
+									"value": "spotify%3Atrack%3A4iV5W9uYEdYUVa79Axb7Rh%2Cspotify%3Atrack%3A1301WleyT98MSxVHPZCA6M"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Album",
+			"item": [
+				{
+					"name": "Get Album tracks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDTO0j3B1ZQEv0CsaL4B-F8vMU6bcbKR7k_94dkQsgUs6GLJxQYnbS6jZrLSZGxfe9iuuphx0o0xXe4RZkdpGcPsKgmcgsTjAIjSLbJuIeUYuz27zVYQpitsrc6fR8yt3Vx5IU3hLGt7rfE0S4Ax9eeT5QCVArehUCXuI3qGOhaley9B27rtV1lMczeH4uADjJkDNJoXTkvDXmjMb8BiioTPf0p88dKweWspnYpgDSizbi1tHHFQlKooQKFizqFxL7CYKdiYms",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy/tracks?market=ES&limit=10&offset=5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"albums",
+								"4aawyAB9vmqN3uQ7FjRGTy",
+								"tracks"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "ES"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get album",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDTO0j3B1ZQEv0CsaL4B-F8vMU6bcbKR7k_94dkQsgUs6GLJxQYnbS6jZrLSZGxfe9iuuphx0o0xXe4RZkdpGcPsKgmcgsTjAIjSLbJuIeUYuz27zVYQpitsrc6fR8yt3Vx5IU3hLGt7rfE0S4Ax9eeT5QCVArehUCXuI3qGOhaley9B27rtV1lMczeH4uADjJkDNJoXTkvDXmjMb8BiioTPf0p88dKweWspnYpgDSizbi1tHHFQlKooQKFizqFxL7CYKdiYms",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy?market=ES",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"albums",
+								"4aawyAB9vmqN3uQ7FjRGTy"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "ES"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDTO0j3B1ZQEv0CsaL4B-F8vMU6bcbKR7k_94dkQsgUs6GLJxQYnbS6jZrLSZGxfe9iuuphx0o0xXe4RZkdpGcPsKgmcgsTjAIjSLbJuIeUYuz27zVYQpitsrc6fR8yt3Vx5IU3hLGt7rfE0S4Ax9eeT5QCVArehUCXuI3qGOhaley9B27rtV1lMczeH4uADjJkDNJoXTkvDXmjMb8BiioTPf0p88dKweWspnYpgDSizbi1tHHFQlKooQKFizqFxL7CYKdiYms",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/albums?ids=382ObEPsp2rxGrnsizN5TX%2C1A2GTWGtFfWp7KSQTwWOyo%2C2noRn2Aes5aoNVsU6iWThc&market=ES",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"albums"
+							],
+							"query": [
+								{
+									"key": "ids",
+									"value": "382ObEPsp2rxGrnsizN5TX%2C1A2GTWGtFfWp7KSQTwWOyo%2C2noRn2Aes5aoNVsU6iWThc"
+								},
+								{
+									"key": "market",
+									"value": "ES"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Artist",
+			"item": [
+				{
+					"name": "Get Artist's album",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQD8kGkI7knLruaIxWq4wmSu7bTaGhNM6JBn2ZrBITVK8katqKIPzaKzeI4jwNwHB0oqCop8qwy2_atOGMUil0DHzddzUpEnEIkIn5tbm1az-NBEjYtzQiE_m6iKPGwJ3wd2eL-rihinuXImNXZ5FUTFNKoC3xR-QoCbqxvTuoffl2qkpdeCmpTcOQADfK1bidOvOlH1Lxc1UkkFOx2bM6a4ekam9xQ-kyLWhAy5cCLJl1Ahi5LidEbXycv8FRdc-WlGtRKEKfA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/albums?include_groups=single%2Cappears_on&market=ES&limit=10&offset=5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"artists",
+								"0TnOYISbd1XYRBk9myaseg",
+								"albums"
+							],
+							"query": [
+								{
+									"key": "include_groups",
+									"value": "single%2Cappears_on"
+								},
+								{
+									"key": "market",
+									"value": "ES"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Artist’s Related Artists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQD8kGkI7knLruaIxWq4wmSu7bTaGhNM6JBn2ZrBITVK8katqKIPzaKzeI4jwNwHB0oqCop8qwy2_atOGMUil0DHzddzUpEnEIkIn5tbm1az-NBEjYtzQiE_m6iKPGwJ3wd2eL-rihinuXImNXZ5FUTFNKoC3xR-QoCbqxvTuoffl2qkpdeCmpTcOQADfK1bidOvOlH1Lxc1UkkFOx2bM6a4ekam9xQ-kyLWhAy5cCLJl1Ahi5LidEbXycv8FRdc-WlGtRKEKfA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/related-artists",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"artists",
+								"0TnOYISbd1XYRBk9myaseg",
+								"related-artists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Artist’s Top Tracks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQD8kGkI7knLruaIxWq4wmSu7bTaGhNM6JBn2ZrBITVK8katqKIPzaKzeI4jwNwHB0oqCop8qwy2_atOGMUil0DHzddzUpEnEIkIn5tbm1az-NBEjYtzQiE_m6iKPGwJ3wd2eL-rihinuXImNXZ5FUTFNKoC3xR-QoCbqxvTuoffl2qkpdeCmpTcOQADfK1bidOvOlH1Lxc1UkkFOx2bM6a4ekam9xQ-kyLWhAy5cCLJl1Ahi5LidEbXycv8FRdc-WlGtRKEKfA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/top-tracks?market=ES",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"artists",
+								"0TnOYISbd1XYRBk9myaseg",
+								"top-tracks"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "ES"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Artist",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQD8kGkI7knLruaIxWq4wmSu7bTaGhNM6JBn2ZrBITVK8katqKIPzaKzeI4jwNwHB0oqCop8qwy2_atOGMUil0DHzddzUpEnEIkIn5tbm1az-NBEjYtzQiE_m6iKPGwJ3wd2eL-rihinuXImNXZ5FUTFNKoC3xR-QoCbqxvTuoffl2qkpdeCmpTcOQADfK1bidOvOlH1Lxc1UkkFOx2bM6a4ekam9xQ-kyLWhAy5cCLJl1Ahi5LidEbXycv8FRdc-WlGtRKEKfA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"artists",
+								"0TnOYISbd1XYRBk9myaseg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Browser",
+			"item": [
+				{
+					"name": "Get Available Genre Seeds",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDG6iajevR1I6_fKJh6QwL32UjHUAq1EHIev1uJyENiINQLaFieNeSlBBZc7IDWuIKdQ_vN4XZFy-etn-uFXsjtdO_0rm8aF3AByD9Rmw7v4XnHuZu7hbLdprOthGrs0uNhndK6W3CInLLB1qgj1Q9PTKr2u7J6r8lPdiG4vVtuS3B_0v530xQNfa7kDljrMzUO4DtdDGbEO1cVy06PqxJ1gvRej-FA7DoTfOntEIJiRUwH4L3IQMb9Gv5sJFG2fWj4IeBroKI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/recommendations/available-genre-seeds",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"recommendations",
+								"available-genre-seeds"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Several Browse Categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDG6iajevR1I6_fKJh6QwL32UjHUAq1EHIev1uJyENiINQLaFieNeSlBBZc7IDWuIKdQ_vN4XZFy-etn-uFXsjtdO_0rm8aF3AByD9Rmw7v4XnHuZu7hbLdprOthGrs0uNhndK6W3CInLLB1qgj1Q9PTKr2u7J6r8lPdiG4vVtuS3B_0v530xQNfa7kDljrMzUO4DtdDGbEO1cVy06PqxJ1gvRej-FA7DoTfOntEIJiRUwH4L3IQMb9Gv5sJFG2fWj4IeBroKI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/browse/categories?country=SE&locale=sv_SE&limit=10&offset=5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"browse",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "SE"
+								},
+								{
+									"key": "locale",
+									"value": "sv_SE"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Featured Playlists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDG6iajevR1I6_fKJh6QwL32UjHUAq1EHIev1uJyENiINQLaFieNeSlBBZc7IDWuIKdQ_vN4XZFy-etn-uFXsjtdO_0rm8aF3AByD9Rmw7v4XnHuZu7hbLdprOthGrs0uNhndK6W3CInLLB1qgj1Q9PTKr2u7J6r8lPdiG4vVtuS3B_0v530xQNfa7kDljrMzUO4DtdDGbEO1cVy06PqxJ1gvRej-FA7DoTfOntEIJiRUwH4L3IQMb9Gv5sJFG2fWj4IeBroKI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/browse/featured-playlists?country=SE&locale=sv_SE&timestamp=2014-10-23T09%3A00%3A00.000Z&limit=10&offset=5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"browse",
+								"featured-playlists"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "SE"
+								},
+								{
+									"key": "locale",
+									"value": "sv_SE"
+								},
+								{
+									"key": "timestamp",
+									"value": "2014-10-23T09%3A00%3A00.000Z"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get New Releases",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDG6iajevR1I6_fKJh6QwL32UjHUAq1EHIev1uJyENiINQLaFieNeSlBBZc7IDWuIKdQ_vN4XZFy-etn-uFXsjtdO_0rm8aF3AByD9Rmw7v4XnHuZu7hbLdprOthGrs0uNhndK6W3CInLLB1qgj1Q9PTKr2u7J6r8lPdiG4vVtuS3B_0v530xQNfa7kDljrMzUO4DtdDGbEO1cVy06PqxJ1gvRej-FA7DoTfOntEIJiRUwH4L3IQMb9Gv5sJFG2fWj4IeBroKI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/browse/new-releases?country=SE&limit=10&offset=5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"browse",
+								"new-releases"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "SE"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Recommendations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDG6iajevR1I6_fKJh6QwL32UjHUAq1EHIev1uJyENiINQLaFieNeSlBBZc7IDWuIKdQ_vN4XZFy-etn-uFXsjtdO_0rm8aF3AByD9Rmw7v4XnHuZu7hbLdprOthGrs0uNhndK6W3CInLLB1qgj1Q9PTKr2u7J6r8lPdiG4vVtuS3B_0v530xQNfa7kDljrMzUO4DtdDGbEO1cVy06PqxJ1gvRej-FA7DoTfOntEIJiRUwH4L3IQMb9Gv5sJFG2fWj4IeBroKI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/recommendations?limit=10&market=ES&seed_artists=4NHQUGzhtTLFvgF5SZesLK&seed_genres=classical%2Ccountry&seed_tracks=0c6xIDDpzE81m2q797ordA",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"recommendations"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "market",
+									"value": "ES"
+								},
+								{
+									"key": "seed_artists",
+									"value": "4NHQUGzhtTLFvgF5SZesLK"
+								},
+								{
+									"key": "seed_genres",
+									"value": "classical%2Ccountry"
+								},
+								{
+									"key": "seed_tracks",
+									"value": "0c6xIDDpzE81m2q797ordA"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Episodes",
+			"item": [
+				{
+					"name": "Get episodes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDG6iajevR1I6_fKJh6QwL32UjHUAq1EHIev1uJyENiINQLaFieNeSlBBZc7IDWuIKdQ_vN4XZFy-etn-uFXsjtdO_0rm8aF3AByD9Rmw7v4XnHuZu7hbLdprOthGrs0uNhndK6W3CInLLB1qgj1Q9PTKr2u7J6r8lPdiG4vVtuS3B_0v530xQNfa7kDljrMzUO4DtdDGbEO1cVy06PqxJ1gvRej-FA7DoTfOntEIJiRUwH4L3IQMb9Gv5sJFG2fWj4IeBroKI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/episodes/512ojhOuo1ktJprKbVcKyQ?market=ES",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"episodes",
+								"512ojhOuo1ktJprKbVcKyQ"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "ES"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get several episodes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDG6iajevR1I6_fKJh6QwL32UjHUAq1EHIev1uJyENiINQLaFieNeSlBBZc7IDWuIKdQ_vN4XZFy-etn-uFXsjtdO_0rm8aF3AByD9Rmw7v4XnHuZu7hbLdprOthGrs0uNhndK6W3CInLLB1qgj1Q9PTKr2u7J6r8lPdiG4vVtuS3B_0v530xQNfa7kDljrMzUO4DtdDGbEO1cVy06PqxJ1gvRej-FA7DoTfOntEIJiRUwH4L3IQMb9Gv5sJFG2fWj4IeBroKI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/episodes?ids=77o6BIVlYM3msb4MMIL1jH%2C0Q86acNRm6V9GYx55SXKwf&market=ES",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"episodes"
+							],
+							"query": [
+								{
+									"key": "ids",
+									"value": "77o6BIVlYM3msb4MMIL1jH%2C0Q86acNRm6V9GYx55SXKwf"
+								},
+								{
+									"key": "market",
+									"value": "ES"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Follow",
+			"item": [
+				{
+					"name": "Check If User Follows Artists or Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDG6iajevR1I6_fKJh6QwL32UjHUAq1EHIev1uJyENiINQLaFieNeSlBBZc7IDWuIKdQ_vN4XZFy-etn-uFXsjtdO_0rm8aF3AByD9Rmw7v4XnHuZu7hbLdprOthGrs0uNhndK6W3CInLLB1qgj1Q9PTKr2u7J6r8lPdiG4vVtuS3B_0v530xQNfa7kDljrMzUO4DtdDGbEO1cVy06PqxJ1gvRej-FA7DoTfOntEIJiRUwH4L3IQMb9Gv5sJFG2fWj4IeBroKI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/me/following/contains?type=artist&ids=2CIMQHirSU0MQqyYHq0eOx%2C57dN52uHvrHOxijzpIgu3E%2C1vCWHaC5f2uS3yhpwWbIA6",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"me",
+								"following",
+								"contains"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "artist"
+								},
+								{
+									"key": "ids",
+									"value": "2CIMQHirSU0MQqyYHq0eOx%2C57dN52uHvrHOxijzpIgu3E%2C1vCWHaC5f2uS3yhpwWbIA6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check if Users Follow Playlist",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDG6iajevR1I6_fKJh6QwL32UjHUAq1EHIev1uJyENiINQLaFieNeSlBBZc7IDWuIKdQ_vN4XZFy-etn-uFXsjtdO_0rm8aF3AByD9Rmw7v4XnHuZu7hbLdprOthGrs0uNhndK6W3CInLLB1qgj1Q9PTKr2u7J6r8lPdiG4vVtuS3B_0v530xQNfa7kDljrMzUO4DtdDGbEO1cVy06PqxJ1gvRej-FA7DoTfOntEIJiRUwH4L3IQMb9Gv5sJFG2fWj4IeBroKI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/playlists/3cEYpjA9oz9GiPac4AsH4n/followers/contains?ids=jmperezperez%2Cthelinmichael%2Cwizzler",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"playlists",
+								"3cEYpjA9oz9GiPac4AsH4n",
+								"followers",
+								"contains"
+							],
+							"query": [
+								{
+									"key": "ids",
+									"value": "jmperezperez%2Cthelinmichael%2Cwizzler"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "follow playlist",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDG6iajevR1I6_fKJh6QwL32UjHUAq1EHIev1uJyENiINQLaFieNeSlBBZc7IDWuIKdQ_vN4XZFy-etn-uFXsjtdO_0rm8aF3AByD9Rmw7v4XnHuZu7hbLdprOthGrs0uNhndK6W3CInLLB1qgj1Q9PTKr2u7J6r8lPdiG4vVtuS3B_0v530xQNfa7kDljrMzUO4DtdDGbEO1cVy06PqxJ1gvRej-FA7DoTfOntEIJiRUwH4L3IQMb9Gv5sJFG2fWj4IeBroKI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"public\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.spotify.com/v1/playlists/3cEYpjA9oz9GiPac4AsH4n/followers",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"playlists",
+								"3cEYpjA9oz9GiPac4AsH4n",
+								"followers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Personalization",
+			"item": [
+				{
+					"name": "Get User’s Top Items",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBPrIm12sJmHrMZvHmdhyX2BRA1wjTgO5Tv42nnP43q7QixCFXbxdNYWwbAdv9-jchqNy8kxoUJArSmRBQ6ui5ZFmVkeDMlhojPrEcTWQPVrDr9aDkBLu1-Cq4IzNSNch8K8fK3LHnw8QXbhgGMFZUbgkdFavIJUHjJlTR0092gmdpjjwJoXjAup_zhUWqe6I50S0b0nsGaGrj2lJ7uKYaf6dktJE2gJ0Uw87kqwQu91Ii4I4_6X5BdtNPIVcL7arxN-8cCU2b8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/me/top/artists?time_range=medium_term&limit=10&offset=5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"me",
+								"top",
+								"artists"
+							],
+							"query": [
+								{
+									"key": "time_range",
+									"value": "medium_term"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Markets",
+			"item": [
+				{
+					"name": "Get Available Markets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBPrIm12sJmHrMZvHmdhyX2BRA1wjTgO5Tv42nnP43q7QixCFXbxdNYWwbAdv9-jchqNy8kxoUJArSmRBQ6ui5ZFmVkeDMlhojPrEcTWQPVrDr9aDkBLu1-Cq4IzNSNch8K8fK3LHnw8QXbhgGMFZUbgkdFavIJUHjJlTR0092gmdpjjwJoXjAup_zhUWqe6I50S0b0nsGaGrj2lJ7uKYaf6dktJE2gJ0Uw87kqwQu91Ii4I4_6X5BdtNPIVcL7arxN-8cCU2b8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/markets",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"markets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Library",
+			"item": [
+				{
+					"name": "Check Saved Albums",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQCEOD1F2UH_sBrLhzmPqNUztwy-qlVw5E3u2gbbUUGAKVuddwc5Fz_nKeO_6hgKhYqD-lhexsb59coyJrkaONEPig3GiiJvFjkNGikyPg6KTD5dxAokgV4XVNFO1KSEkoMTP3m3PvjBZh8u93iTM-Qnsq-MaYnKvnOOEc7u3eowL0tfU20JlDzel05rRPw17t0lj-edui4jyxAfu0HN73XnVMeuWKqKffvqxb9oyDWw_BRIcsUXesXrRaaGTsEC9JRKMR2S45bG",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/me/albums/contains?ids=382ObEPsp2rxGrnsizN5TX%2C1A2GTWGtFfWp7KSQTwWOyo%2C2noRn2Aes5aoNVsU6iWThc",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"me",
+								"albums",
+								"contains"
+							],
+							"query": [
+								{
+									"key": "ids",
+									"value": "382ObEPsp2rxGrnsizN5TX%2C1A2GTWGtFfWp7KSQTwWOyo%2C2noRn2Aes5aoNVsU6iWThc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check User’s Saved Episodes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQCEOD1F2UH_sBrLhzmPqNUztwy-qlVw5E3u2gbbUUGAKVuddwc5Fz_nKeO_6hgKhYqD-lhexsb59coyJrkaONEPig3GiiJvFjkNGikyPg6KTD5dxAokgV4XVNFO1KSEkoMTP3m3PvjBZh8u93iTM-Qnsq-MaYnKvnOOEc7u3eowL0tfU20JlDzel05rRPw17t0lj-edui4jyxAfu0HN73XnVMeuWKqKffvqxb9oyDWw_BRIcsUXesXrRaaGTsEC9JRKMR2S45bG",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/me/episodes/contains?ids=77o6BIVlYM3msb4MMIL1jH%2C0Q86acNRm6V9GYx55SXKwf",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"me",
+								"episodes",
+								"contains"
+							],
+							"query": [
+								{
+									"key": "ids",
+									"value": "77o6BIVlYM3msb4MMIL1jH%2C0Q86acNRm6V9GYx55SXKwf"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User’s Saved Tracks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQDeooRJhfsG2Ttt_-BpA1MdKDMOu88y_sBu8vjYKAZAfZS9Gzg8ahLQU56Ak-X717gjmBs1Y_fjMMU7WPbKvCiXG9fj8yYXg9ie1J-u0q93x9VrcnsBMCD1hIIRiGicL56AFmw9EQNgoxDUvD4EVzdDXINbI0ttYIdnU7s4QbtaHOasxkWhNj6P_IeFQoVptKQQK8NX2QgIf44lg1tSPMVIHSDuydv_k2Q_rWWRJ7_98LL6PhosHfukMd0eUwiREAvn-bzuVtbF",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/me/tracks?market=ES&limit=10&offset=5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"me",
+								"tracks"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "ES"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saved album",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBx4jPnl01j-TqNVZVxFgnVHWjpCqSIdW7TYujmtmMPYBm7EAjhayjX5apjrLjpmjmQqcM9muIxoCYlUjuxfUai_2imrDqndnRQyEdM7Sw6YE6AcsW3HwpOxC9634BCrOn1oqfYxwaonI5snvxeUfYXTj4wvDRc3gShOf0ZxZ_K_rPsPraYQIjQLxHy5KDB1CGD8p_g5NFDCys_AYGNLWZ5tgIuVaucOCTjKSY0jbEOFSKhyJ5_oH4bvFMB431PMMasFlwLR28c",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/me/albums?ids=382ObEPsp2rxGrnsizN5TX%2C1A2GTWGtFfWp7KSQTwWOyo%2C2noRn2Aes5aoNVsU6iWThc",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"me",
+								"albums"
+							],
+							"query": [
+								{
+									"key": "ids",
+									"value": "382ObEPsp2rxGrnsizN5TX%2C1A2GTWGtFfWp7KSQTwWOyo%2C2noRn2Aes5aoNVsU6iWThc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Albums",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBx4jPnl01j-TqNVZVxFgnVHWjpCqSIdW7TYujmtmMPYBm7EAjhayjX5apjrLjpmjmQqcM9muIxoCYlUjuxfUai_2imrDqndnRQyEdM7Sw6YE6AcsW3HwpOxC9634BCrOn1oqfYxwaonI5snvxeUfYXTj4wvDRc3gShOf0ZxZ_K_rPsPraYQIjQLxHy5KDB1CGD8p_g5NFDCys_AYGNLWZ5tgIuVaucOCTjKSY0jbEOFSKhyJ5_oH4bvFMB431PMMasFlwLR28c",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.spotify.com/v1/me/albums?ids=382ObEPsp2rxGrnsizN5TX%2C1A2GTWGtFfWp7KSQTwWOyo%2C2noRn2Aes5aoNVsU6iWThc",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spotify",
+								"com"
+							],
+							"path": [
+								"v1",
+								"me",
+								"albums"
+							],
+							"query": [
+								{
+									"key": "ids",
+									"value": "382ObEPsp2rxGrnsizN5TX%2C1A2GTWGtFfWp7KSQTwWOyo%2C2noRn2Aes5aoNVsU6iWThc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
